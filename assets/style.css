@@ -1,0 +1,52 @@
+/* form valid */
+
+.input__field.error {
+    border: 2px solid red;
+}
+
+.input__field.success {
+    border: 2px solid #87d4ae;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 47px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.input__field.error + .icon::before {
+    content: '✖';
+    color: red;
+}
+
+.input__field.success + .icon::before {
+    content: '✔';
+    color: #87d4ae;
+}
+
+.form__input {
+    position: relative;
+}
+
+.error {
+    color: #e40000;
+    font-size: 90%;
+    padding-top: 10px;
+    display: block;
+}
+
+.reg_button {
+    top: 15px;
+}
+
+
+#checkbox_error	{
+    clear: left;
+    font-size: 100%;
+}
+.form__check.errorCheck input + label::before {
+    border: 2px solid red;
+}
